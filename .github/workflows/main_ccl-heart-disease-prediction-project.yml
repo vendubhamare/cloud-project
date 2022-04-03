@@ -60,4 +60,4 @@ jobs:
         with:
           app-name: 'CCL-heart-disease-prediction-project'
           slot-name: 'Production'
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_822B6ED21C3C49EEB1D4FA9607D97DBF }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_4AE497DDF18A4C79AE263D9ED10046F1 }}
