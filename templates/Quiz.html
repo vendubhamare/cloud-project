@@ -27,54 +27,7 @@
     </header>
 
     <main>
-<!--    <div class="container">-->
-<!--        <div class="card-left">-->
-<!--            <h1>Instructions</h1>-->
-<!--            <ul>-->
-<!--                <li>This personality test contains 120 statements. There is no time limit. Most people take about 15-->
-<!--                    minutes - please allow yourself plenty of time.</li>-->
-<!--                <li>Please respond to all of the statements and answer in sequence.</li>-->
-<!--                <li>Double-check that you have made the right choice. If you need to change an answer, simply select the-->
-<!--                    new response and the incorrect response will disappear.</li>-->
-<!--                <li>Try not to use the 'Neutral' option too often. </li>-->
-<!--                <li>Describe yourself as you generally are now, not as you wish to be in the future.</li>-->
-<!--                <li>Describe yourself, as you honestly see yourself, in relation to other people of the same sex and of-->
-<!--                    roughly the same age. Your spontaneous answer is usually the most accurate.</li>-->
-<!--            </ul>-->
-<!--        </div>-->
 
-<!--        <div class="card-right">-->
-<!--            <table>-->
-<!--                <tr>-->
-<!--                    <td>1</td>-->
-<!--                    <td>Disagree</td>-->
-<!--                    <td>If you strongly disagree or if the statement is definitely false.</td>-->
-<!--                </tr>-->
-<!--                <tr>-->
-<!--                    <td>2</td>-->
-<!--                    <td>Fairly Disagree</td>-->
-<!--                    <td>If you do not completely disagree.</td>-->
-<!--                </tr>-->
-
-<!--                <tr>-->
-<!--                    <td>3</td>-->
-<!--                    <td>Neutral</td>-->
-<!--                    <td>If you are neutral about the statement, if you cannot decide, or if the statement is about-->
-<!--                        equally true and false</td>-->
-<!--                </tr>-->
-<!--                <tr>-->
-<!--                    <td>4</td>-->
-<!--                    <td>Fairly Agree</td>-->
-<!--                    <td>If you do not completely agree</td>-->
-<!--                </tr>-->
-
-<!--                <tr>-->
-<!--                    <td>5</td>-->
-<!--                    <td>Agree</td>-->
-<!--                    <td>If you strongly agree or if the statement is definitely true.</td>-->
-<!--                </tr>-->
-<!--            </table>-->
-<!--        </div>-->
     </div>
 <!--        <form>-->
             <form action="{{ url_for('predict')}}" method="post">             <div class="main">
@@ -90,7 +43,7 @@
                     <label>Enter Your age</label>
                 </div>
                 <div class="radio">
-                    <input type="number" name="age" min ='14' required>
+                    <input type="number" name="age" min ='14'>
                 </div>
             </div>
 <br>
@@ -101,7 +54,7 @@
                 </div>
                 <div class="radio">
                     <div>
-                       <input type="radio" name="gender"  value='1' id="g1" required>
+                       <input type="radio" name="gender"  value='1' id="g1">
                        <label for="g1" >Male</label>
                     </div>
                     <div>
@@ -122,7 +75,7 @@
                     <label >Which type of chest pain?</label>
                 </div>
                 <div class="radio">
-                    <div><input required type="radio" name="chestPain"  value='0'><label>0 : Typical angina</label></div>
+                    <div><input type="radio" name="chestPain"  value='0'><label>0 : Typical angina</label></div>
                     <div><input type="radio" name="chestPain"  value='1' ><label>1 : Atypical angina: Chest pain not related to heart</label></div>
                     <div><input type="radio" name="chestPain"  value='2' ><label>2 : Non-Anginal pain: Typically, esophageal spasms (Non heart related)</label></div>
                     <div><input type="radio" name="chestPain"  value='3' ><label>3 : Asymptomatic: Chest pain not showing signs of disease</label></div>
@@ -138,7 +91,7 @@
 anything above 130-140 is typically cause for concern</label>
                 </div>
                 <div class="radio">
-                    <input type="number" name="trestbps" min ='94' max='200' required>
+                    <input type="number" name="trestbps" min ='94' max='200'>
                 </div>
             </div>
                  <br>
@@ -149,7 +102,7 @@ anything above 130-140 is typically cause for concern</label>
                     <label>‘chol’ - Serum cholestoral in mg/dl</label>
                 </div>
                 <div class="radio">
-                    <input type="number" name="chol" min ='126' max='564' required>
+                    <input type="number" name="chol" min ='126' max='564'>
                 </div>
             </div>
                  <br>
@@ -163,7 +116,7 @@ anything above 130-140 is typically cause for concern</label>
                 </div>
                 <div class="radio">
                     <div>
-                        <input type="radio" name="fbs"  value='0' required>
+                        <input type="radio" name="fbs"  value='0'>
                         <label >0 : false</label>
                     </div>
                     <div>
@@ -181,7 +134,7 @@ anything above 130-140 is typically cause for concern</label>
                 </div>
                 <div class="radio">
                     <div>
-                        <input type="radio" name="electrocardiographic"  value='0' required>
+                        <input type="radio" name="electrocardiographic"  value='0'>
                         <label >0</label>
                     </div>
                     <div>
@@ -203,7 +156,7 @@ anything above 130-140 is typically cause for concern</label>
                     <label>Maximum heart rate achieved</label>
                 </div>
                 <div class="radio">
-                    <input type="number" name="heartRate" min ='71' max='202' required>
+                    <input type="number" name="heartRate" min ='71' max='202'>
                 </div>
             </div>
                  <br>
@@ -216,7 +169,7 @@ anything above 130-140 is typically cause for concern</label>
                 </div>
                 <div class="radio">
                     <div>
-                        <input type="radio" name="angina"  value='0' required>
+                        <input type="radio" name="angina"  value='0'>
                         <label >0 : No</label>
                     </div>
                     <div>
@@ -233,7 +186,7 @@ anything above 130-140 is typically cause for concern</label>
                     <label>Oldpeak = ST depression induced by exercise relative to rest</label>
                 </div>
                 <div class="radio">
-                    <input type="number" name="oldpeak" min ='0' max='6.2' step="0.01" required>
+                    <input type="number" name="oldpeak" min ='0' max='6.2' step="0.01">
                 </div>
             </div>
                  <br>
@@ -245,7 +198,7 @@ anything above 130-140 is typically cause for concern</label>
                 </div>
                 <div class="radio">
                     <div>
-                        <input type="radio" name="ST"  value='0' required>
+                        <input type="radio" name="ST"  value='0'>
                         <label >0 : Up sloping: better heart rate with exercise (uncommon)</label>
                     </div>
                     <div>
@@ -268,7 +221,7 @@ anything above 130-140 is typically cause for concern</label>
                 </div>
                 <div class="radio">
                     <div>
-                        <input type="radio" name="flourosopy"  value='0' required>
+                        <input type="radio" name="flourosopy"  value='0'>
                         <label >0</label>
                     </div>
                     <div>
@@ -294,7 +247,7 @@ anything above 130-140 is typically cause for concern</label>
                 </div>
                 <div class="radio">
                     <div>
-                        <input type="radio" name="thal"  value='0' required>
+                        <input type="radio" name="thal"  value='0'>
                         <label >0 : normal</label>
                     </div>
                     <div>
